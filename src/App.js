@@ -1,4 +1,5 @@
 import "./App.css";
+import { Button, DatePicker } from "antd";
 
 function App() {
   return (
@@ -9,6 +10,14 @@ function App() {
         alt="Logo"
         style={{
           width: "40%",
+        }}
+      />
+
+      <input type="date" name="date" />
+
+      <DatePicker
+        onChange={(date) => {
+          console.log(date);
         }}
       />
     </div>
